@@ -3,12 +3,12 @@
     border-radius: 12px;
     outline: none;
     border: none;
+    text-transform: uppercase;
 }
 
 .button.sign-up {
     background-color: red;
     color: white;
-    text-transform: uppercase;
     margin: 2rem 0 4rem 0;
 }
 
