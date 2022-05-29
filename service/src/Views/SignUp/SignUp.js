@@ -1,0 +1,24 @@
+import Input from '../../Components/Input/Input';
+import logo from '../img/signup-image.png';
+import SignUpHeader from './Components/SignUpHeader/SignUpHeader';
+import './SignUp.css';
+
+const SignUp = () => {
+    return (
+        <div>
+            <div className="img-wrapper">
+                <img src={logo} alt='SendASnack logo'></img>
+            </div>
+            <SignUpHeader />
+            <form className='input-form'>
+                <Input type="text" label="Name" value="name" />
+                <Input type="email" label="Email" value="email" />
+                <Input type="phone" label="Phone No." value="phone" />
+                <Input type="password" label="Password" value="password" />
+                <Input type="password" label="Re-enter Password" value="confirmPassword" />
+            </form>
+        </div>
+    );
+}
+
+export default SignUp;

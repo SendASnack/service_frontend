@@ -1,8 +1,9 @@
 import './App.css';
+import SignUp from './Views/SignUp/SignUp';
 
 function App() {
   return (
-    <p>SendAsnack</p>
+    <SignUp />
   );
 }
 
