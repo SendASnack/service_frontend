@@ -1,3 +1,4 @@
+import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import logo from '../img/signup-image.png';
 import SignUpHeader from './Components/SignUpHeader/SignUpHeader';
@@ -17,6 +18,9 @@ const SignUp = () => {
                 <Input type="password" label="Password" value="password" />
                 <Input type="password" label="Re-enter Password" value="confirmPassword" />
             </form>
+            <div className='sign-up-button'>
+                <Button type="submit" class="sign-up" buttonText="Sign Up"/>
+            </div>
         </div>
     );
 }

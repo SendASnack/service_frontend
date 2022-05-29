@@ -1,5 +1,4 @@
 import './SignUpHeader.css';
-import { Link } from "react-router-dom";
 
 const SignUpHeader = () => {
     return (

@@ -1,0 +1,19 @@
+.button {
+    padding: 0.7rem 2.2rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.button.sign-up {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    margin: 2rem 0 4rem 0;
+}
+
+.button.sign-up:hover {
+    cursor: pointer;
+    background-color: rgb(215, 10, 10);
+    transition: all 0.15s ease-in-out;
+}
