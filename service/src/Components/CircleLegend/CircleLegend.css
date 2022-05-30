@@ -1,0 +1,26 @@
+.circle-legend-wrapper {
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+}
+
+.circle-legend {
+    min-width: 10rem;
+    min-height: 10rem;
+    border-radius: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+.legend-price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 700;
+    color: red;
+}
