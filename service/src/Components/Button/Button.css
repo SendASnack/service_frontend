@@ -22,13 +22,14 @@
 }
 
 .button.logout {
+    font-size: 15px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     font-weight: 600;
     padding: 0.9rem 1.5rem;
 }
 
 .button.logout:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     transition: all 0.15s ease-in-out;
 }
