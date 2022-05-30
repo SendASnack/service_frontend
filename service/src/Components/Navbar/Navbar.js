@@ -1,6 +1,7 @@
 import Button from '../Button/Button';
 import logo from './send-logo.png';
 import './Navbar.css';
+import IconButton from '../IconButton/IconButton';
 
 const Navbar = () => {
     return (
@@ -20,10 +21,10 @@ const Navbar = () => {
                 <ul>
                     <li>+1-650-547-9864</li>
                     <li>
-                        <Button buttonText="logout"/>
+                        <Button class="logout" buttonText="logout"/>
                     </li>
                     <li>
-                        <Button buttonText="cart"></Button>
+                        <IconButton icon="fa-solid fa-plus"></IconButton>
                     </li>
                 </ul>
             </div>

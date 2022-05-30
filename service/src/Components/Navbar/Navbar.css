@@ -35,12 +35,18 @@
 .link-items ul li {
     font-weight: 500;
     text-transform: uppercase;
+    color: red;
+}
+
+.link-items ul li:hover {
+    cursor: pointer;
+    color: black;
 }
 
 .checkout-items {
     margin-left: auto; 
-    margin-right: 1rem;
-    width: 30%;
+    margin-right: 2.5rem;
+    width: 28%;
 }
 
 .checkout-items ul {
@@ -50,4 +56,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.checkout-items ul li:nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 2rem;
 }
