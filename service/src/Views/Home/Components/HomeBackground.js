@@ -1,5 +1,6 @@
 import './HomeBackground.css';
 import burguer from './burguer.png';
+import VerticalText from '../../../Components/Text/VerticalText/VerticalText';
 
 const HomeBackground = (props) => {
     return (
@@ -7,7 +8,7 @@ const HomeBackground = (props) => {
             <div className='home-left-side'>
             </div>
             <div className='home-right-side'>
-                <h1 className="vertical-text">Burguer</h1>
+                <VerticalText class="bottom-right" text="Burguer"/>
             </div>
         </div>
     );

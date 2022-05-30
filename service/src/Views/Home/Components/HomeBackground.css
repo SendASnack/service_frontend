@@ -21,15 +21,3 @@
     height: 100%;
     background-color: red;
 }
-
-.vertical-text {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 9.7rem;
-    font-family: 'Poppins';
-    writing-mode: vertical-rl;
-    float: right;
-    transform: rotate(180deg);
-    color: rgba(255, 255, 255, 0.2);
-}
