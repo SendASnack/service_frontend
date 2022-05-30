@@ -12,3 +12,13 @@
     right: 0;
     bottom: 0;
 }
+
+.middle {
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+}
+
+.dark {
+    color: rgba(0, 0, 0, 0.05);;
+}

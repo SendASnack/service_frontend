@@ -1,0 +1,19 @@
+.home-content {
+    font-family: 'Poppins';
+    position: relative;
+    width: 100%;
+    padding: 5rem;
+}
+
+.home-content-title {
+    text-align: center;
+    font-size: 56px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.products-cards {
+    margin-top: 5rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
