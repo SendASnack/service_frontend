@@ -1,4 +1,4 @@
-.navbar {
+.navbar, .navbar-white {
     font-family: 'Poppins';
     height: 150px;
     width: 100%;
@@ -6,7 +6,11 @@
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1000;
+    z-index: 1003;
+}
+
+.navbar-white {
+    background-color: #fff;
 }
 
 .navbar-logo {
@@ -64,8 +68,15 @@
     align-items: center;
 }
 
-.checkout-items ul li:nth-child(1) {
+.checkout-items-number {
     color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.checkout-items-number-red {
+    color: red;
     font-size: 20px;
     font-weight: 600;
     margin-right: 2rem;

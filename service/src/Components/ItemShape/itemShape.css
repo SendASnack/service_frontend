@@ -33,12 +33,10 @@
 
 .yellow {
     background-color: yellow;
-    z-index: 10;
 }
 
 .grill {
     background-color: rgb(250, 175, 84);
-    z-index: 11;
 }
 
 .orange {

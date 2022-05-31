@@ -1,12 +1,28 @@
 import Button from '../Button/Button';
+import { useState, useEffect } from 'react';
 import logo from './send-logo.png';
 import './Navbar.css';
 import IconButton from '../IconButton/IconButton';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+    const [transparent, setTransparent] = useState(true);
+
+    // On scrool, make bg white
+    useEffect(() => {
+        window.addEventListener('scroll', (event) => {
+            // Get scroll position
+            if (window.pageYOffset > 650) {
+                setTransparent(false);
+            } else {
+                setTransparent(true);
+            }
+        });
+    }, []);
+
     return (
-        <div className='navbar'>
+        <div className={transparent ? 'navbar' : 'navbar-white'}>
             <div className='navbar-logo'>
                 <img src={logo} alt='SendASnack Logo'></img>
             </div>
@@ -20,7 +36,7 @@ const Navbar = () => {
             </div>
             <div className='checkout-items'>
                 <ul>
-                    <li>+1-650-547-9864</li>
+                    <li className={transparent ? 'checkout-items-number' : 'checkout-items-number-red'}>+1-650-547-9864</li>
                     <li>
                         <Link to='sign-up'><Button class="logout" buttonText="logout"/></Link>
                     </li>
