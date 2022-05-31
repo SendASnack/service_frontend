@@ -1,6 +1,5 @@
 import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
-import Navbar from '../../Components/Navbar/Navbar';
 import logo from '../img/signup-image.png';
 import './Login.css';
 
