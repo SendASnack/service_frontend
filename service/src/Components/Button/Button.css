@@ -16,19 +16,43 @@
     margin: 2rem 0 4rem 0;
 }
 
-.button.sign-up:hover {
+.button.sign-up:hover, .button.order:hover {
     background-color: rgb(215, 10, 10);
     transition: all 0.15s ease-in-out;
 }
 
 .button.logout {
+    font-size: 15px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     font-weight: 600;
     padding: 0.9rem 1.5rem;
 }
 
 .button.logout:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.15s ease-in-out;
+}
+
+.button.order {
+    font-size: 15px;
+    background-color: red;
+    color: #fff;
+    margin: 2rem 0;
+    padding: 0.7rem 1.5rem;
+}
+
+.button.order-outline {
+    background-color: #fff;
+    color: red;
+    border: solid 1px red;
+    margin: 2rem 0;
+    padding: 0.7rem 1.5rem;
+    font-size: 16px;
+}
+
+.button.order-outline:hover {
+    background-color: red;
+    color: #fff;
     transition: all 0.15s ease-in-out;
 }
