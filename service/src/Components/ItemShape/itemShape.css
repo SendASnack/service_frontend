@@ -1,0 +1,46 @@
+.item-shape {
+    height: 22rem;
+    width: 39%;
+    border-top-right-radius: 50%;
+    background-color: yellow;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.item-shape-content {
+    width: 60%;
+    padding-left: 1rem;
+}
+
+.item-shape-content h2 {
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 32px;
+}
+
+.item-shape-img {
+    padding-top: 4rem;
+    width: 50%;
+    height: 100%;
+}
+
+.item-shape-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.yellow {
+    background-color: yellow;
+    z-index: 10;
+}
+
+.grill {
+    background-color: rgb(250, 175, 84);
+    z-index: 11;
+}
+
+.orange {
+    background-color: rgb(241, 161, 13);
+}
