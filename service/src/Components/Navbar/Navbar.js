@@ -5,7 +5,7 @@ import './Navbar.css';
 import IconButton from '../IconButton/IconButton';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [transparent, setTransparent] = useState(true);
 

@@ -65,3 +65,11 @@
     padding: 0.8rem;
     font-size: 14px;
 }
+
+.input-card-button {
+    font-size: 15px;
+    background-color: red;
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+    padding: 0.7rem 1.5rem;
+}

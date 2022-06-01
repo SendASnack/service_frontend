@@ -4,6 +4,9 @@ import CardInfo from './Components/CardInfo';
 import InfoData from './Components/InfoData';
 import ActiveCard from './Components/ActiveCard';
 import SetDefaultCard from './Components/SetDefaultCard';
+import InputCard from './Components/InputCard';
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
 
 const Profile = () => {
     return (
@@ -21,6 +24,29 @@ const Profile = () => {
                             <SetDefaultCard />
                             <SetDefaultCard /> 
                         </CardInfo>
+                        <div className='input-cards'>
+                        <InputCard>
+                            <Input type="password" label="password" value="password" />
+                            <Input type="password" label="New password" value="new-password" />
+                            <div className='align-button-center'>
+                                <Button class="input-card-button" buttonText="change password" />
+                            </div>
+                        </InputCard>
+                        <InputCard>
+                            <Input type="tel" label="Phone No." value="" />
+                            <div className='align-button-center'>
+                                <Button class="input-card-button" buttonText="change phone no." />
+                            </div>
+                        </InputCard>
+                        <InputCard>
+                            <Input type="text" label="City" value="city" />
+                            <Input type="text" label="Street" value="street" />
+                            <Input class="no-margin-bottom" type="text" label="Postal-Code" value="postal-code" />
+                            <div className='align-button-center'>
+                                <Button class="input-card-button" buttonText="change address" />
+                            </div>
+                        </InputCard>
+                        </div>
                     </div>
                 </div>
             </div>
