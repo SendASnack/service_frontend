@@ -51,8 +51,25 @@
     font-size: 16px;
 }
 
-.button.order-outline:hover {
+.button.order-outline:hover, .set-default:hover {
     background-color: red;
     color: #fff;
     transition: all 0.15s ease-in-out;
+}
+
+.set-default {
+    background-color: #fff;
+    color: red;
+    border: solid 1px red;
+    margin: 2rem 0;
+    padding: 0.8rem;
+    font-size: 14px;
+}
+
+.input-card-button {
+    font-size: 15px;
+    background-color: red;
+    color: #fff;
+    margin: 2rem 0 1rem 0;
+    padding: 0.7rem 1.5rem;
 }

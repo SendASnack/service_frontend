@@ -1,0 +1,18 @@
+.info-data {
+    margin-bottom: 1.5rem;
+}
+
+.info-data-header {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.info-data-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(173, 163, 163);
+}
+
+.address {
+    width: 70%;
+}

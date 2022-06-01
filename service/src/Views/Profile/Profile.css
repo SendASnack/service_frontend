@@ -1,0 +1,27 @@
+.profile {
+    margin-top: 10rem;
+    background-color: rgb(250, 247, 247);
+}
+
+.profile-cards-wrapper {
+    padding: 5rem;
+    height: 100%;
+    width: 100%;
+}
+
+.profile-card-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-cards {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.align-button-center {
+    text-align: center;
+}
