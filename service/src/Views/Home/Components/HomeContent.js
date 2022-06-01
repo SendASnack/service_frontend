@@ -1,4 +1,4 @@
-import Card from "../../../Components/Card/Card";
+import BurgerCard from "../../../Components/BurgerCard/BurgerCard";
 import ItemShape from "../../../Components/ItemShape/ItemShape";
 import VerticalText from "../../../Components/Text/VerticalText/VerticalText";
 import './HomeContent.css';
@@ -11,14 +11,14 @@ const HomeContent = () => {
                 <h2 className="home-content-title">Dine In + Delivery</h2>
                 <VerticalText class="middle dark" text="Menu" />
                 <div className="products-cards">
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                 </div>
                 <div className="products-cards">
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                    <Card title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                 </div>
             </div>
             <div className="item-shapes">

@@ -1,4 +1,4 @@
-import './Card.css';
+import './BurgerCard.css';
 import burger from './burguer.png';
 import Button from '../Button/Button';
 
