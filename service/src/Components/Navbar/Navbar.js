@@ -13,7 +13,7 @@ const Navbar = (props) => {
     useEffect(() => {
         window.addEventListener('scroll', (event) => {
             // Get scroll position
-            if (window.pageYOffset > 650) {
+            if (window.pageYOffset > 30) {
                 setTransparent(false);
             } else {
                 setTransparent(true);
