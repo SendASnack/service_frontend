@@ -26,7 +26,7 @@ const Profile = () => {
                         </CardInfo>
                         <div className='input-cards'>
                         <InputCard>
-                            <Input type="password" label="password" value="password" />
+                            <Input type="password" label="Password" value="password" />
                             <Input type="password" label="New password" value="new-password" />
                             <div className='align-button-center'>
                                 <Button class="input-card-button" buttonText="change password" />

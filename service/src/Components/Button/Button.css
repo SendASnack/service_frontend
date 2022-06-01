@@ -16,7 +16,7 @@
     margin: 2rem 0 4rem 0;
 }
 
-.button.sign-up:hover, .button.order:hover {
+.button.sign-up:hover, .button.order:hover, .input-card-button:hover {
     background-color: rgb(215, 10, 10);
     transition: all 0.15s ease-in-out;
 }
