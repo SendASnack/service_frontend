@@ -21,6 +21,7 @@ const Input = (props) => {
     <div className="input-group">
       {showLabel && <label className="input-label" htmlFor={props.value}>{props.label}</label>}
       <input
+        id={props.id}
         type={props.type}
         name={props.value}
         placeholder={props.label}
