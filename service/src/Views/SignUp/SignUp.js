@@ -10,6 +10,7 @@ const SignUp = () => {
         var name = document.getElementById("name");
         var email = document.getElementById("email");
         var user = document.getElementById("username");
+        var phone = document.getElementById("phone");
         var password = document.getElementById("password");
         var repassword = document.getElementById("repassword");
 
@@ -17,7 +18,7 @@ const SignUp = () => {
             const requestOptions = {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({name: name.value, username: user.value, email: email.value, password: password.value })
+                body: JSON.stringify({name: name.value, username: user.value, email: email.value, password: password.value, phoneNumber: phone.value })
             };
             fetch('http://localhost:8080/api/auth/register', requestOptions)
                 .then(response => response.json())

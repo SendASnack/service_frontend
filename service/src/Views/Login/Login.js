@@ -23,11 +23,11 @@ const Login = () => {
             .then(response => response.json())
             .then(data => {
                 let arr = [];
-                console.log(data);
                 arr.push(data);
                 arr.map((info) => {
                     if (info.message=="Authentication succeeded."){
-                        setToken(info.token)
+                        setToken(info.token);
+                        localStorage.setItem("token", info.token);
                         navigate('/', {token: token});
                     }
                 });
