@@ -1,0 +1,6 @@
+.search-and-filters {
+    width: 60%;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}

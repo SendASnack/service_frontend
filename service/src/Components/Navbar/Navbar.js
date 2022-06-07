@@ -36,7 +36,7 @@ const Navbar = (props) => {
             </div>
             <div className='checkout-items'>
                 <ul>
-                    <li className={transparent ? 'checkout-items-number' : 'checkout-items-number-red'}>+1-650-547-9864</li>
+                    <li className={transparent ? `checkout-items-number ${props.textClass}` : 'checkout-items-number-red'}>+1-650-547-9864</li>
                     <li>
                         <Link to='/login'><Button class="logout" buttonText="login"/></Link>
                     </li>
