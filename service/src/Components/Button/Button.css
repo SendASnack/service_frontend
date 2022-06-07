@@ -6,6 +6,32 @@
   text-transform: uppercase;
 }
 
+.default {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  width: 9rem;
+  color: red;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.default-selected {
+  background-color: red;
+  color: #fff;
+}
+
+.default-selected:hover {
+  background-color: rgb(212, 23, 23);
+}
+
+.default:hover {
+  cursor: pointer;
+  background-color: rgb(231, 228, 228);
+  transition: all 0.15s ease-in-out;
+}
+
 .button:hover {
   cursor: pointer;
 }

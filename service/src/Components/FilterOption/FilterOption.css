@@ -1,0 +1,6 @@
+.filter-option {
+    padding: 0 0 2rem 5rem;
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
