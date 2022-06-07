@@ -55,7 +55,7 @@ const SignUp = () => {
             notify("Please provide an password, it must have 4 characters and at least one number and one letter!");
             return;
         }
-
+        
         axios.post('http://localhost:8080/api/auth/register', {
             name: name,
             username: username,
