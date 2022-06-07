@@ -1,18 +1,18 @@
 .left-side-content {
-    font-family: 'Poppins';
-    margin-top: 4rem;
-    margin-right: 10rem;
+  font-family: "Poppins";
+  margin-top: 4rem;
+  margin-right: 10rem;
 }
 
 .left-side-content-title {
-    font-size: 58px;
-    margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.75);
+  font-size: 58px;
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .left-side-content-text {
-    max-width: 22rem;
-    font-size: 17px;
-    font-weight: 400;
-    color: rgb(171, 168, 168);
+  max-width: 22rem;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(171, 168, 168);
 }
