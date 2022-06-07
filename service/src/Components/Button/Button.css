@@ -1,75 +1,78 @@
 .button {
-    padding: 0.7rem 2.2rem;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
+  padding: 0.7rem 2.2rem;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
 }
 
 .button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .button.sign-up {
-    background-color: red;
-    color: white;
-    margin: 2rem 0 4rem 0;
+  background-color: red;
+  color: white;
+  margin: 2rem 0 4rem 0;
 }
 
-.button.sign-up:hover, .button.order:hover, .input-card-button:hover {
-    background-color: rgb(215, 10, 10);
-    transition: all 0.15s ease-in-out;
+.button.sign-up:hover,
+.button.order:hover,
+.input-card-button:hover {
+  background-color: rgb(215, 10, 10);
+  transition: all 0.15s ease-in-out;
 }
 
 .button.logout {
-    font-size: 15px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-weight: 600;
-    padding: 0.9rem 1.5rem;
+  font-size: 15px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
 }
 
 .button.logout:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: all 0.15s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.15s ease-in-out;
 }
 
 .button.order {
-    font-size: 15px;
-    background-color: red;
-    color: #fff;
-    margin: 2rem 0;
-    padding: 0.7rem 1.5rem;
+  font-size: 15px;
+  background-color: red;
+  color: #fff;
+  margin: 2rem 0;
+  padding: 0.7rem 1.5rem;
 }
 
 .button.order-outline {
-    background-color: #fff;
-    color: red;
-    border: solid 1px red;
-    margin: 2rem 0;
-    padding: 0.7rem 1.5rem;
-    font-size: 16px;
+  background-color: #fff;
+  color: red;
+  border: solid 1px red;
+  margin: 2rem 0;
+  padding: 0.7rem 1.5rem;
+  font-size: 16px;
 }
 
-.button.order-outline:hover, .set-default:hover {
-    background-color: red;
-    color: #fff;
-    transition: all 0.15s ease-in-out;
+.button.order-outline:hover,
+.set-default:hover {
+  background-color: red;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
 }
 
 .set-default {
-    background-color: #fff;
-    color: red;
-    border: solid 1px red;
-    margin: 2rem 0;
-    padding: 0.8rem;
-    font-size: 14px;
+  background-color: #fff;
+  color: red;
+  border: solid 1px red;
+  margin: 2rem 0;
+  padding: 0.8rem;
+  font-size: 14px;
 }
 
 .input-card-button {
-    font-size: 15px;
-    background-color: red;
-    color: #fff;
-    margin: 2rem 0 1rem 0;
-    padding: 0.7rem 1.5rem;
+  font-size: 15px;
+  background-color: red;
+  color: #fff;
+  margin: 2rem 0 1rem 0;
+  padding: 0.7rem 1.5rem;
 }
