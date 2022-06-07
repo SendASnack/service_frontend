@@ -20,6 +20,7 @@
 .default-selected {
   background-color: red;
   color: #fff;
+  font-size: 15px;
 }
 
 .default-selected:hover {
@@ -34,6 +35,18 @@
 
 .button:hover {
   cursor: pointer;
+}
+
+.outline-black {
+  font-size: 15px;
+  padding: 0.7rem 3rem;
+  background-color: none;
+  border: solid 1px #000;
+  color: #000;
+}
+
+.outline-black:hover {
+  background-color: rgb(236, 226, 226);
 }
 
 .button.sign-up {
@@ -68,6 +81,14 @@
   color: #fff;
   margin: 2rem 0;
   padding: 0.7rem 1.5rem;
+}
+
+.add-to-cart {
+  background-color: red;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 16px;
+  margin: 2rem 0;
 }
 
 .button.order-outline {
