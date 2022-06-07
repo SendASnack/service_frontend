@@ -1,0 +1,14 @@
+.card {
+    margin-top: 2rem;
+    background-color: #fff;
+    font-family: "Poppins";
+    padding: 2.5rem 4rem;
+    width: 40%;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}

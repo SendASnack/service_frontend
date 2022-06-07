@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 const Card = (props) => {
     return (
-        <div className='card'>
+        <div className='burger-card'>
             <div className='card-image'>
                 <img src={burger}></img>
             </div>
