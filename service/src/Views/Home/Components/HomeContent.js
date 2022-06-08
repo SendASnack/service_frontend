@@ -6,7 +6,7 @@ import './HomeContent.css';
 const HomeContent = () => {
     return (
         <>
-            <div className="home-content">  
+            <div className="home-content" data-testid="home-content">  
                 <h3 className="home-content-header">Our Special</h3>
                 <h2 className="home-content-title">Dine In + Delivery</h2>
                 <VerticalText class="middle dark" text="Menu" />

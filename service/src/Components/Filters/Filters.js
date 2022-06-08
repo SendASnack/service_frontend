@@ -2,7 +2,7 @@ import './Filters.css';
 
 const Filters =() => {
     return (
-        <div className='filters'>
+        <div className='filters' data-testid="filters">
             <select className="filters-options">
                 <option>Order By</option>
                 <option>2</option>

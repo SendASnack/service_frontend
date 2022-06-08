@@ -42,7 +42,7 @@ const Navbar = (props) => {
   }, []);
 
   return (
-    <div className={transparent ? "navbar" : "navbar-white"}>
+    <div data-testid="Navbar" className={transparent ? "navbar" : "navbar-white"}>
       <div className="navbar-logo">
         <img src={logo} alt="SendASnack Logo"></img>
       </div>
