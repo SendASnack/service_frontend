@@ -1,14 +1,19 @@
-import './Button.css';
+import "./Button.css";
 
 const Button = (props) => {
+  let id = "button";
+  if (props.buttonText !== undefined) id = props.type + "-" + id;
 
-    let id = "button";
-    if (props.buttonText !== undefined)
-        id = props.type + "-" + id;
-
-    return (
-        <button data-testid={id} className={`button ${props.class}`} type={props.type}>{props.buttonText}</button>
-    );
-}
+  return (
+    <button
+      data-testid={id}
+      className={`button ${props.class}`}
+      type={props.type}
+      onClick={props.onClick}
+    >
+      {props.buttonText}
+    </button>
+  );
+};
 
 export default Button;

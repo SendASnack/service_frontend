@@ -1,0 +1,24 @@
+.close-modal-button {
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-link {
+    color: red;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    color: rgb(218, 52, 52);
+    text-decoration: underline;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.modal-content p {
+    margin-bottom: 0.5rem;
+}
