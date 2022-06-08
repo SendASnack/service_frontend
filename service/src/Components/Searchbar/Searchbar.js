@@ -1,5 +1,4 @@
 import './Searchbar.css';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Searchbar = () => {
     return (
