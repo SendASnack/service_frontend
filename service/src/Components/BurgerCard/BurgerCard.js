@@ -4,7 +4,7 @@ import Button from '../Button/Button';
 
 const Card = (props) => {
     return (
-        <div className='burger-card'>
+        <div className='burger-card' data-testid="burger-card">
             <div className='card-image'>
                 <img src={burger}></img>
             </div>

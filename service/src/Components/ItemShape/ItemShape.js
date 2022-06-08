@@ -4,7 +4,7 @@ import './itemShape.css';
 
 const ItemShape = (props) => {
     return (
-        <div className={`item-shape ${props.class}`}>
+        <div className={`item-shape ${props.class}`} data-testid="item-shape">
             <div className="item-shape-content">
                 <h2>{props.text}</h2>
                 <Button class="order-outline" buttonText="order now" />
