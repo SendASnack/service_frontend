@@ -36,7 +36,7 @@ const Profile = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar textClass="checkout-items-number-red" />
             <div className='profile'>
                 <div className='profile-cards-wrapper'>
                     <div className='profile-card-info'>

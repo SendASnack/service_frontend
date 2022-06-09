@@ -11,7 +11,7 @@ import "./OrderItem.css";
 const OrderItem = () => {
   return (
     <>
-      <Navbar />
+      <Navbar textClass="checkout-items-number-red" />
       <div className="order-item">
         <div className="go-back">
           <Button class="default" buttonText="Go Back" />
@@ -31,9 +31,9 @@ const OrderItem = () => {
         <div className="ingredients">
         <Card title="Your Ingredients">
             <div className="ingredients-images">
-                <ImageButton image="hot-sauce.png" text="Hot Sauce" />
-                <ImageButton image="hot-sauce.png" text="Hot Sauce" />
-                <ImageButton image="hot-sauce.png" text="Hot Sauce" />
+                <ImageButton image="sauces/cheese.png" text="Cheese" />
+                <ImageButton image="sauces/hot-sauce.png" text="Hot Sauce" />
+                <ImageButton image="sauces/ketchup.png" imageClass="min-size" text="Ketchup" />
             </div>
             <div className="ingredients-buttons">
                 <Button class="add-to-cart" buttonText="Add to Cart" />
