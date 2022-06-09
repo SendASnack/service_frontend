@@ -2,6 +2,7 @@ import Button from "../../Components/Button/Button";
 import Card from "../../Components/Card/Card";
 import ImageButton from "../../Components/ImageButton/ImageButton";
 import Navbar from "../../Components/Navbar/Navbar";
+import RedirectButton from "../../Components/RedirectButton/RedirectButton";
 import ShadowText from "../../Components/Text/ShadowText/ShadowText";
 import Header from "./Components/Header";
 import HeaderImage from "./Components/HeaderImage";
@@ -14,7 +15,7 @@ const OrderItem = () => {
       <Navbar textClass="checkout-items-number-red" />
       <div className="order-item">
         <div className="go-back">
-          <Button class="default" buttonText="Go Back" />
+          <RedirectButton class="default" path="/orders" buttonText="Go Back" />
         </div>
         <Header>
           <ShadowText text="Burger Thief" />

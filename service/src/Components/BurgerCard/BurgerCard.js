@@ -1,6 +1,7 @@
 import './BurgerCard.css';
 import burger from './burguer.png';
 import Button from '../Button/Button';
+import RedirectButton from '../RedirectButton/RedirectButton';
 
 const Card = (props) => {
     return (
@@ -13,7 +14,7 @@ const Card = (props) => {
                 <p>{props.text}</p>
             </div>
             <div className='card-buttons'>
-                <Button class="order-outline" buttonText="Order now"/>
+                <RedirectButton path={props.path} class="order-outline" buttonText="Order now"/>
             </div>
         </div>
     );
