@@ -105,7 +105,7 @@ const Navbar = (props) => {
             )}
           </li>
           <li>
-            <IconButton path="/orders"></IconButton>
+            <IconButton path="/cart"></IconButton>
           </li>
         </ul>
       </div>

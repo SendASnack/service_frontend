@@ -12,3 +12,9 @@
     text-align: center;
     margin-bottom: 1rem;
 }
+
+.align-left {
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+}
