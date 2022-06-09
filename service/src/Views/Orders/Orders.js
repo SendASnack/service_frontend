@@ -27,14 +27,14 @@ const Orders = (props) => {
                 <div className="orders-content">
                     <VerticalText class="middle dark" text="Menu" />
                     <div className="products-cards">
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     </div>
                     <div className="products-cards">
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                        <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
+                        <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     </div>
                 </div>
             </div>

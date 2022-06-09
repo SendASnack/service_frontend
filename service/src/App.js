@@ -17,6 +17,7 @@ function App() {
             <Route path='/login' element={<Login/>}/>
             <Route path='/sign-up' element={<SignUp/>}/>
             <Route path='/orders' element={<Orders />}/>
+            <Route path='/order-item' element={<OrderItem />}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route component={NotFoundPage} />
           </Routes>
