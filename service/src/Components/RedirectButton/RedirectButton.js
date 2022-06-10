@@ -8,6 +8,7 @@ const RedirectButton = (props) => {
 
     return (
             <button
+                data-testid="redirect-button"
                 className={`button ${props.class}`}
                 type={props.type}
                 onClick={handleRoute}
