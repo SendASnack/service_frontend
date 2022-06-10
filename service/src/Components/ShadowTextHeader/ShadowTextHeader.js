@@ -3,7 +3,7 @@ import './ShadowTextHeader.css';
 
 const ShadowTextHeader = (props) => {
     return (
-    <div className='shadow-text-header'>
+    <div data-testid="shadow-text-header" className='shadow-text-header'>
         <ShadowText text={props.text} />
         <p>{props.text}</p>
     </div>

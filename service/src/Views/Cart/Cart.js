@@ -7,7 +7,7 @@ import ShadowTextHeader from '../../Components/ShadowTextHeader/ShadowTextHeader
 
 const Cart = () => {
     return (
-        <div className='cart'>
+        <div className='cart' data-testid="cart">
             <Navbar textClass="checkout-items-number-red" />
             <ShadowTextHeader text="Cart" />
             <div className="cart-card">

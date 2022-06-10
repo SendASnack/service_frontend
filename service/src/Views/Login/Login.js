@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import logo from '../img/signup-image.png';
@@ -13,8 +12,6 @@ const Login = () => {
     const [password, setPassword] = useState("");
 
     const [token, setToken] = useState(null);
-    const navigate = useNavigate();
-    const location = useLocation();
 
     const notify = (message) => toast(message);
 

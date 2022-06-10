@@ -2,7 +2,7 @@ import './Summary.css';
 
 const Summary = (props) => {
     return (
-        <div className='summary'>
+        <div className='summary' data-testid="summary">
             <span className='summary-title'>Order Summary</span>
             <div className='summary-quantity'>
                 <p>2x Burger Magic</p>

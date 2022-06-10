@@ -1,18 +1,14 @@
 import './RedirectButton.css';
-import { useNavigate } from "react-router-dom";
-
-
 
 const RedirectButton = (props) => {
-
-    const navigate = useNavigate();
   
     const handleRoute = () =>{ 
-      navigate(props.path);
+        window.location.replace(props.path);
     }
 
     return (
             <button
+                data-testid="redirect-button"
                 className={`button ${props.class}`}
                 type={props.type}
                 onClick={handleRoute}
