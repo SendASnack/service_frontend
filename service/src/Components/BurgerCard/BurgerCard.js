@@ -3,7 +3,7 @@ import burger from './burguer.png';
 import Button from '../Button/Button';
 import RedirectButton from '../RedirectButton/RedirectButton';
 
-const Card = (props) => {
+const BurgerCard = (props) => {
     return (
         <div className='burger-card' data-testid="burger-card">
             <div className='card-image'>
@@ -20,4 +20,4 @@ const Card = (props) => {
     );
 }
 
-export default Card;
+export default BurgerCard;
