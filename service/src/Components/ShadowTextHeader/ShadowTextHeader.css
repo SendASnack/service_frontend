@@ -1,9 +1,9 @@
-.cart-header {
+.shadow-text-header {
     position: relative;
     width: 100%;
 }
 
-.cart-header p {
+.shadow-text-header p {
     font-family: 'Poppins', sans-serif;
     font-size: 49px;
     font-weight: 600;

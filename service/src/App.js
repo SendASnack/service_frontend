@@ -8,6 +8,7 @@ import NotFoundPage from './Views/NotFoundPage/NotFoundPage';
 import Orders from './Views/Orders/Orders';
 import OrderItem from './Views/OrderItem/OrderItem';
 import Cart from './Views/Cart/Cart';
+import Checkout from './Views/Checkout/Checkout';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path='/order-item' element={<OrderItem />}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
             <Route component={NotFoundPage} />
           </Routes>
       </BrowserRouter>

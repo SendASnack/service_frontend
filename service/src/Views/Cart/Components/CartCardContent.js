@@ -1,16 +1,15 @@
 import './CartCardContent.css';
 import CartItem from './CartItem';
-import OrderSummary from './OrderSummary';
+import DashedLine from '../../../Components/DashedLine/DashedLine';
+import Summary from '../../../Components/Summary/Summary';
 
 const CartCardContent = () => {
     return(
         <div className='cart-card-content'>
-            <CartItem />
-            <CartItem />
-            <hr></hr>
-            <div className='order-summary'>
-            <OrderSummary />
-            </div>
+            <CartItem image="burger3.png" name="Burger Magic" desc="With Cheese and Ketchup" price="10.99" />
+            <CartItem image="burguer.png" name="Burger Magic" desc="With Ketchup" price="10.99" />
+            <DashedLine />
+            <Summary total="21.98" />
         </div>
     )
 }
