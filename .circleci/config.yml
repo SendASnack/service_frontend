@@ -11,8 +11,23 @@ jobs:
             cd ./service
             npm install
             npm test
+            
+  deploy:
+    docker:
+      - image: arvindr226/alpine-ssh
+    steps:
+      - checkout
+      - run: ssh -oStrictHostKeyChecking=no -v $USER@$IP "~/SendASnack/Service/Frontend/deploy.sh"
           
 workflows:
   build-and-test:
     jobs:
       - test
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - develop
+                - master
