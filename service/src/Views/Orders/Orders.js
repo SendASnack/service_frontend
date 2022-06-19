@@ -30,8 +30,6 @@ const Orders = (props) => {
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                    </div>
-                    <div className="products-cards">
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                         <BurgerCard path="/order-item" title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />

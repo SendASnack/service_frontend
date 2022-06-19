@@ -8,7 +8,7 @@ function Modal(props) {
 
     return (
         <>  
-            <div className="backdrop" onClick={hideModal}></div>
+            <div className={`backdrop ${props.backdropClass}`} onClick={hideModal}></div>
             <div className="modal" data-testid="modal">
                 {props.children}
             </div>

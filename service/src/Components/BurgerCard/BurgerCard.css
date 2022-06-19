@@ -1,4 +1,5 @@
 .burger-card {
+  flex: 0 0 33.3333333%;
   background-color: #fff;
   font-family: "Poppins";
   width: 18rem;
@@ -7,6 +8,7 @@
   max-height: 32rem;
   border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem;
 }
 
 .card-image {
@@ -38,7 +40,31 @@
 }
 
 .card-buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
   text-align: center;
   width: 100%;
   height: 20%;
+}
+
+.not-logged-in-button {
+  padding: 0.7rem 2.2rem;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: red;
+  border: solid 1px red;
+  margin: 2rem 0;
+  padding: 0.7rem 1.5rem;
+  font-size: 16px;
+}
+
+.not-logged-in-button:hover {
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
 }
