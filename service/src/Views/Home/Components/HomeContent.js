@@ -14,9 +14,6 @@ const HomeContent = () => {
                     <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
-                </div>
-                <div className="products-cards">
-                    <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                     <BurgerCard title="Burger Thief" text="Lorem ipsum dolor sit amet, consecture" />
                 </div>

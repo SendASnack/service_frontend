@@ -25,7 +25,7 @@
   margin-top: 5rem;
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .item-shapes {
