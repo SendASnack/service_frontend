@@ -6,27 +6,27 @@ import './HomeContent.css';
 
 const HomeContent = () => {
 
-    const [info, setInfo] = useState(null);
+    const [info, setInfo] = useState([]);
+    const [result, setResult] = useState([]);
 
     useEffect(() => {
-        let result = [];
+        let array = [];
         const requestOptions = {
             method: 'GET',
             headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
         };
-        fetch('http://localhost:8080/api/products?category=“”&maxPrice=“”', requestOptions)
+        fetch('http://localhost:8080/api/products?category=&maxPrice=', requestOptions)
             .then(response => response.json())
             .then(data => {
-                console.log(data);
-                let arr = [];
-                let i = 0;
-                arr.push(data);
-                arr.map((product) => {
-                    result.push(<BurgerCard key={product[i].id} title={product[i].name} text={product[i].description} />);
-                    i++;
-                })
-                setInfo(result);
+                setInfo(data);
             });
+
+            info.map((product) => {
+                array.push(
+                    <BurgerCard key={product.id} title={product.name} text={product.description} />
+                )
+            })
+            setResult(array);
     }, []);
 
     return (
@@ -36,7 +36,7 @@ const HomeContent = () => {
                 <h2 className="home-content-title">Dine In + Delivery</h2>
                 <VerticalText class="middle dark" text="Menu" />
                 <div className="products-cards">
-                    {info!==null ? info : null}
+                    {result}
                 </div>
             </div>
             <div className="item-shapes">
