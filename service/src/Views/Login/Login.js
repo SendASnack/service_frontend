@@ -17,8 +17,6 @@ const Login = () => {
 
     function handleLogin(){
         if (!email || !password){
-            console.log(email)
-            console.log(password)
             notify("Please fill all fields");
             return;
         }
@@ -33,13 +31,12 @@ const Login = () => {
                 setTimeout(() => window.location.replace("/"), 2000);
             }, (error) => {
                 notify(JSON.parse(error.request.response)['message']);
-                console.log(error);
             });
     }
 
     return (
         <>
-        <div className='login'>
+        <div className='login' data-testid="login">
             <div className="img-wrapper">
                 <img src={logo} alt='SendASnack logo'></img>
             </div>

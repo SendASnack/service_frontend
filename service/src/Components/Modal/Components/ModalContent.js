@@ -7,7 +7,7 @@ const ModalContent = () => {
         <div>
             <div className="modal-content">
                 <p>Not Logged In!</p>
-                <a href="/login" className="login-link">Login</a> first!
+                <p><a href="/login" className="login-link">Login</a> first!</p>
             </div>
             <div className="close-modal-button">
             <Button class="outline-black" buttonText="Back" />

@@ -31,14 +31,11 @@ const Navbar = (props) => {
   }, []);
 
   useEffect(() => {
-      console.log(localStorage.getItem("token"))
-      console.log("prev: ", isLoggedIn)
       if (localStorage.getItem("token") === null) {
         setIsLoggedIn(false);
       } else {
         setIsLoggedIn(true);
       }
-      console.log("after: ", isLoggedIn)
   }, []);
 
   return (
@@ -99,7 +96,7 @@ const Navbar = (props) => {
                   }} />
             </Link>
             ) : (
-                <Link to="/login">
+              <Link to="/login">
                 <Button class="logout" buttonText="login" />
               </Link>
             )}

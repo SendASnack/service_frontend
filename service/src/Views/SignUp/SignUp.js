@@ -70,7 +70,6 @@ const SignUp = () => {
                 }, 1000);
             }, (error) => {
                 notify(JSON.parse(error.request.response)['message']);
-                console.log(error);
             });
 
     };
