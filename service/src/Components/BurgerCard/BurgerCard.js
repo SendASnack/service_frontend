@@ -1,5 +1,5 @@
 import './BurgerCard.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import burger from './burguer.png';
 import Button from '../Button/Button';
 import RedirectButton from '../RedirectButton/RedirectButton';
@@ -14,6 +14,15 @@ const BurgerCard = (props) => {
         setModal(!modal);
     }
 
+    useEffect(() => {
+        if (localStorage.getItem("token") === null) {
+          setIsLoggedIn(false);
+        } else {
+          setIsLoggedIn(true);
+        }
+    }, []);
+
+
     return (
         <div className='burger-card' data-testid="burger-card">
             <div className='card-image'>
@@ -27,7 +36,6 @@ const BurgerCard = (props) => {
             { isLoggedIn ?
             <RedirectButton path={props.path} class="order-outline" buttonText="Order now"/> : 
             <div className='not-logged-in-button' onClick={ModalHandler}>
-                Order Now
               {modal && <Modal backdropClass="backdrop-darker">
                   <ModalContent />
                   </Modal>}
