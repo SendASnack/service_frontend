@@ -1,7 +1,5 @@
 import './BurgerCard.css';
 import { useState, useEffect } from "react";
-import burger from './burguer.png';
-import Button from '../Button/Button';
 import RedirectButton from '../RedirectButton/RedirectButton';
 import Modal from '../Modal/Modal';
 import ModalContent from '../Modal/Components/ModalContent';
@@ -26,7 +24,7 @@ const BurgerCard = (props) => {
     return (
         <div className='burger-card' data-testid="burger-card">
             <div className='card-image'>
-                <img src={burger}></img>
+                <img src={props.image}></img>
             </div>
             <div className='card-content'>
                 <h2>{props.title}</h2>

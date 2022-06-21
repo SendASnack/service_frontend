@@ -17,9 +17,15 @@ const HomeContent = () => {
             .then(response => response.json())
             .then(data => {
                 data.map((product) => {
-                    array.push(
-                        <BurgerCard key={product.id} title={product.name} text={product.description} />
-                    )
+                    if (product.category === "fries") {
+                        array.push(
+                            <BurgerCard key={product.id} image="fries.png" title={product.name} text={product.description} />
+                        )
+                    } else {
+                        array.push(
+                            <BurgerCard key={product.id} image="burguer.png" title={product.name} text={product.description} />
+                        )
+                    }
                 })
                 setResult(array);
             });
