@@ -9,6 +9,7 @@ import Orders from './Views/Orders/Orders';
 import OrderItem from './Views/OrderItem/OrderItem';
 import Cart from './Views/Cart/Cart';
 import Checkout from './Views/Checkout/Checkout';
+import Rider from './Views/Rider/Rider';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
           <Routes>
           <Route path='/' exact element={<Home/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/products' element={<Orders />}/>
             <Route path='/sign-up' element={<SignUp/>}/>
-            <Route path='/orders' element={<Orders />}/>
+            <Route path='/orders' element={<Rider />}/>
             <Route path='/order-item' element={<OrderItem />}/>
             <Route path='/profile' element={<Profile/>}/>
             <Route path='/cart' element={<Cart/>}/>

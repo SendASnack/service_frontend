@@ -1,0 +1,54 @@
+.orders-card {
+    margin-top: 2rem;
+    background-color: #fff;
+    font-family: "Poppins";
+    padding: 2.5rem 4rem;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.orders-image {
+    width: 10%;
+    height: 100%;
+}
+
+.orders-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.orders-products {
+    margin-left: 2rem;
+    width: 30%;
+    height: 100%;
+}
+
+.orders-price, .orders-address, .orders-date {
+    width: 20%;
+    height: 100%;
+}
+
+.orders-products, .orders-price, .orders-address, .orders-date {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.orders-products-header, .orders-price-header, .orders-address-header, .orders-date-header {
+    height: 20%;
+    width: 100%;
+}
+
+.orders-products p, .orders-price p, .orders-address p, .orders-date p {
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(134, 126, 126);
+}

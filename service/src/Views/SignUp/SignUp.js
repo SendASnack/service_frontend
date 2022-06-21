@@ -14,6 +14,9 @@ const SignUp = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
+    const [street, setStreet] = useState("");
+    const [city, setCity] = useState("");
+    const [postalCode, setPostalCode] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
@@ -60,8 +63,13 @@ const SignUp = () => {
             name: name,
             username: username,
             email: email,
+            password: password,
             phoneNumber: phone,
-            password: password
+            address: {
+                city:city,
+                street:street,
+                postalCode:postalCode
+            }
         })
             .then((response) => {
                 notify(response.data.message);
@@ -86,6 +94,9 @@ const SignUp = () => {
                 <Input id="username" type="text" label="Username" on_value_changed={setUsername} />
                 <Input id="email" type="email" label="Email" on_value_changed={setEmail} />
                 <Input id="phone" type="phone" label="Phone No." on_value_changed={setPhone} />
+                <Input id="city" type="text" label="City" on_value_changed={setCity} />
+                <Input id="street" type="text" label="Street" on_value_changed={setStreet} />
+                <Input id="postal-code" type="text" label="Postal-Code" on_value_changed={setPostalCode} />
                 <Input id="password" type="password" label="Password" on_value_changed={setPassword} />
                 <Input id="repassword" type="password" label="Re-enter Password" on_value_changed={setConfirmPassword} />
             </form>
