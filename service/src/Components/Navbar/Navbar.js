@@ -51,7 +51,7 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
-            <Link className="link-item" to="/">
+            <Link className="link-item" to="/products">
               Menu
             </Link>
           </li>
