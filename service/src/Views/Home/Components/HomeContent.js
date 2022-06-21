@@ -5,9 +5,7 @@ import { useState ,useEffect } from "react";
 import './HomeContent.css';
 
 const HomeContent = () => {
-
-    const [info, setInfo] = useState([]);
-    const [result, setResult] = useState([]);
+    const [result, setResult] = useState(null);
 
     useEffect(() => {
         let array = [];
@@ -18,15 +16,19 @@ const HomeContent = () => {
         fetch('http://localhost:8080/api/products?category=&maxPrice=', requestOptions)
             .then(response => response.json())
             .then(data => {
-                setInfo(data);
+                data.map((product) => {
+                    if (product.category === "fries") {
+                        array.push(
+                            <BurgerCard key={product.id} image="fries.png" title={product.name} text={product.description} />
+                        )
+                    } else {
+                        array.push(
+                            <BurgerCard key={product.id} image="burguer.png" title={product.name} text={product.description} />
+                        )
+                    }
+                })
+                setResult(array);
             });
-
-            info.map((product) => {
-                array.push(
-                    <BurgerCard key={product.id} title={product.name} text={product.description} />
-                )
-            })
-            setResult(array);
     }, []);
 
     return (
