@@ -31,6 +31,7 @@ const Orders = (props) => {
                 productInfo={[product.name, product.description, product.price]}
                 key={product.id}
                 image="fries.png"
+                product_id={product.id}
                 title={product.name}
                 text={product.description}
                 price={product.price}
@@ -42,6 +43,7 @@ const Orders = (props) => {
                 productInfo={[product.name, product.description, product.price]}
                 key={product.id}
                 image="burguer.png"
+                product_id={product.id}
                 title={product.name}
                 text={product.description}
                 price={product.price}

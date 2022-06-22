@@ -28,6 +28,7 @@ const HomeContent = () => {
                 key={product.id}
                 path="order-item"
                 image="fries.png"
+                product_id={product.id}
                 title={product.name}
                 text={product.description}
                 price={product.price}
@@ -40,6 +41,7 @@ const HomeContent = () => {
                 key={product.id}
                 path="order-item"
                 image="burguer.png"
+                product_id={product.id}
                 title={product.name}
                 text={product.description}
                 price={product.price}
@@ -57,7 +59,7 @@ const HomeContent = () => {
         <h3 className="home-content-header">Our Special</h3>
         <h2 className="home-content-title">Dine In + Delivery</h2>
         <VerticalText class="middle dark" text="Menu" />
-        <div className="products-cards">{result}</div>
+        <div className="products-cards">{result !== null ? result : <p className="no-products">No Products Available!</p>}</div>
       </div>
       <div className="item-shapes">
         <ItemShape class="orange" text="Chicha Burger" />

@@ -12,22 +12,36 @@ import "./OrderItem.css";
 
 const OrderItem = () => {
 
+  const [id, setId] = useState("");
   const [price, setPrice] = useState("");
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
 
   useEffect(() => {
-      console.log("name: ", localStorage.getItem("product_title"));
-      console.log("desc: ", localStorage.getItem("product_text"))
-      console.log("price: ", localStorage.getItem("product_price"))
+      setId(localStorage.getItem("product_id"))
       setName(localStorage.getItem("product_title"))
       setDesc(localStorage.getItem("product_text"))
       setPrice(localStorage.getItem("product_price"))
-      console.log(name)
-      console.log(desc)
   }, []);
 
   const addToCart = () => {
+    var product_id = localStorage.getItem("product_id");
+
+    if (id) {
+      const requestOptions = {
+        method: 'PATCH',
+        headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
+      };
+      fetch('http://localhost:8080/api/cart/'+id+'/add', requestOptions)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          setTimeout(() => window.location.replace("/cart"), 1000);
+        })
+    } else {
+      window.location.replace("/");
+    }
+    localStorage.removeItem("product_id");
     localStorage.removeItem("product_title");
     localStorage.removeItem("product_text");
     localStorage.removeItem("product_price");

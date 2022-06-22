@@ -21,6 +21,8 @@ const BurgerCard = (props) => {
   }, []);
 
   const passDataToOrder = () => {
+    console.log("ID: ",props.product_id)
+    localStorage.setItem("product_id", props.product_id)
     localStorage.setItem("product_title", props.title);
     localStorage.setItem("product_text", props.text);
     localStorage.setItem("product_price", props.price);

@@ -33,3 +33,9 @@
   width: 100%;
   max-width: 100%;
 }
+
+.no-products {
+  color: red;
+  width: 20%;
+  margin: 0 40%;
+}
