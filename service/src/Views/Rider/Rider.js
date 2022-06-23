@@ -15,7 +15,7 @@ const Rider = () => {
           headers: { Authorization: "Bearer " + localStorage.getItem("token") },
         };
         fetch(
-          "http://localhost:8080/api/history",
+          "http://20.77.90.223:8081/api/history",
           requestOptions
         )
           .then((response) => response.json())
@@ -52,7 +52,7 @@ const Rider = () => {
           headers: { Authorization: "Bearer " + localStorage.getItem("token") },
         };
         fetch(
-          "http://localhost:8080/api/orders/pending",
+          "http://20.77.90.223:8081/api/orders/pending",
           requestOptions
         )
           .then((response) => response.json())

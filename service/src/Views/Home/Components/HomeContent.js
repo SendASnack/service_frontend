@@ -15,7 +15,7 @@ const HomeContent = () => {
       headers: { Authorization: "Bearer " + localStorage.getItem("token") },
     };
     fetch(
-      "http://localhost:8080/api/products?category=&maxPrice=",
+      "http://20.77.90.223:8081/api/products?category=&maxPrice=",
       requestOptions
     )
       .then((response) => response.json())

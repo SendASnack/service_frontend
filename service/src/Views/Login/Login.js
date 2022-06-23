@@ -26,7 +26,7 @@ const Login = () => {
             return;
         }
 
-        axios.post('http://localhost:8080/api/auth/login', {
+        axios.post('http://20.77.90.223:8081/api/auth/login', {
             email: email,
             password: password
         })
