@@ -1,0 +1,9 @@
+.dashed-line {
+    margin: 2rem 5%;
+    border: none;
+    border-top: 2px dashed #000;
+    color: #fff;
+    background-color: #fff;
+    height: 3px;
+    width: 90%;
+}

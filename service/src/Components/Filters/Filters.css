@@ -1,0 +1,16 @@
+.filters {
+    width: 50%;
+}
+
+.filters-options {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgb(245, 88, 88);
+    color: #fff;
+    font-size: 15px;
+}
+
+.filters-options:focus {
+    outline: none;
+}

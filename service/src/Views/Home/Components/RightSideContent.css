@@ -1,15 +1,15 @@
 .right-side-content {
-    font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .right-side-content-title {
-    color: yellow;
-    margin-bottom: 0.5rem;
+  color: yellow;
+  margin-bottom: 0.5rem;
 }
 
 .right-side-content-text {
-    max-width: 13rem;
-    font-size: 18px;
-    font-weight: 500;
-    color: #fff;
+  max-width: 13rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
 }

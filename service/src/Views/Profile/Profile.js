@@ -7,18 +7,42 @@ import SetDefaultCard from './Components/SetDefaultCard';
 import InputCard from './Components/InputCard';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
+import { useEffect, useState } from 'react';
 
 const Profile = () => {
+
+    const [info, setInfo] = useState(null);
+
+    useEffect(() => {
+        let result = [];
+        const requestOptions = {
+            method: 'GET',
+            headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
+        };
+        fetch('http://20.77.90.223:8081/api/profile', requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                let arr = [];
+                arr.push(data);
+                console.log(data)
+                arr.map((info) => {
+                    result.push(<InfoData title="Name" content={info.name} />);
+                    result.push(<InfoData title="Email" content={info.email} />);
+                    result.push(<InfoData title="Phone No." content={info.phoneNumber} />);
+                })
+
+                setInfo(result);
+            });
+    }, []);
+
     return (
         <>
-            <Navbar />
+            <Navbar textClass="checkout-items-number-red" />
             <div className='profile'>
                 <div className='profile-cards-wrapper'>
                     <div className='profile-card-info'>
                         <CardInfo>
-                            <InfoData title="Name" content="Pedro Monteiro" />
-                            <InfoData title="Email" content="pmapm@ua.pt" />
-                            <InfoData title="Phone No." content="969698252" />
+                            {info!==null ? info : null}
                             <InfoData class="address" title="Address" content="Rua das Salsichas, Aveiro, Portugal 6300-101" />
                             <ActiveCard title="Payment Methods" />
                             <SetDefaultCard />

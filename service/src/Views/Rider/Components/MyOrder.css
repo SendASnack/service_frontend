@@ -1,0 +1,30 @@
+.orders-products-actual {
+  margin-left: 2rem;
+  width: 25%;
+  height: 100%;
+}
+
+.orders-price-actual {
+  width: 10%;
+  height: 100%;
+}
+
+.orders-price-actual,
+.orders-products-actual,
+.orders-status {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.orders-price-actual p,
+.orders-products-actual p,
+.orders-status p {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(134, 126, 126);
+}

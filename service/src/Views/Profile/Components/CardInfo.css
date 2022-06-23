@@ -1,14 +1,14 @@
 .card-info {
-    background-color: #fff;
-    font-family: 'Poppins';
-    padding: 2.5rem;
-    width: 40%;
-    border-radius: 12px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #fff;
+  font-family: "Poppins";
+  padding: 2.5rem;
+  width: 40%;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-info-name {
-    font-size: 32px;
-    color: rgba(0, 0, 0, 0.9);
-    padding-bottom: 2.5rem;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 2.5rem;
 }
