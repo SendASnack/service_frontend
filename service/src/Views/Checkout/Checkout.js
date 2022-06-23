@@ -9,15 +9,15 @@ import { useState } from 'react';
 const Checkout = (props) => {
 
     const createOrder = () => {
-        let result = [];
         const requestOptions = {
             method: 'POST',
             headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
         };
-        fetch('http://localhost:8080/api/card/order', requestOptions)
+        fetch('http://localhost:8080/api/cart/order', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log("data: ",data);
+                localStorage.setItem('products', '[]');
         })
         setTimeout(() => window.location.replace("/orders"), 1500);
       }
