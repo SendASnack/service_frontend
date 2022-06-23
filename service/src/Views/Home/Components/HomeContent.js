@@ -21,7 +21,7 @@ const HomeContent = () => {
       .then((response) => response.json())
       .then((data) => {
         data.map((product) => {
-          if (product.category === "fries") {
+          if (product.category === "FRIES") {
             array.push(
               <BurgerCard
                 productInfo={[product.name, product.description, product.price]}
