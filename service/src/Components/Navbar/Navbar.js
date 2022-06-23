@@ -56,9 +56,18 @@ const Navbar = (props) => {
             </Link>
           </li>
           <li>
+          { isLoggedIn ?
             <Link className="link-item" to="/orders">
-              Orders
-            </Link>
+            Orders
+          </Link> : 
+
+            <p className="link-item" onClick={ModalHandler}>
+                Orders
+              {modal && <Modal>
+                  <ModalContent />
+                  </Modal>}
+            </p> 
+                }
           </li>
           <li>
               { isLoggedIn ?

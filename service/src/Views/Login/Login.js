@@ -12,8 +12,13 @@ const Login = () => {
     const [password, setPassword] = useState("");
 
     const [token, setToken] = useState(null);
+    localStorage.setItem('products', '[]');
 
     const notify = (message) => toast(message);
+
+    const redirectToSignUp = () => {
+        setTimeout(() => window.location.replace("/sign-up"), 1500);
+      }
 
     function handleLogin(){
         if (!email || !password){
@@ -45,6 +50,9 @@ const Login = () => {
                 <Input id="email" type="email" label="Email" value="email" on_value_changed={setEmail} />
                 <Input id="password" type="password" label="Password" value="password" on_value_changed={setPassword} />
             </form>
+            <div className="sign-up-option">
+                <p>Don't have an account? <a onClick={redirectToSignUp}>Sign up</a>!</p>
+            </div>
             <div className='sign-up-button' onClick={handleLogin}>
                 <Button type="submit" class="sign-up" buttonText="Login"/>
             </div>

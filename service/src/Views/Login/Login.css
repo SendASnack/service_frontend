@@ -11,3 +11,19 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+.sign-up-option {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(148, 125, 125);
+}
+
+.sign-up-option a {
+  color: red;
+}
+
+.sign-up-option a:hover {
+  cursor: pointer;
+  color: darkred;
+}

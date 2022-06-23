@@ -9,8 +9,8 @@ const OrderItemDesc = (props) => {
                 <p><img className='star' src={star}></img>{props.review}</p>
             </div>
             <div className='order-item-content'>
-                <h2>Burger Thief</h2>
-                <p>Lorem ipsum dolor sitamet, consectetur</p>
+                <h2>{props.title}</h2>
+                <p>{props.text}</p>
             </div>
             <div className='order-item-button'>
                 <Button class="outline-black" buttonText={`${props.price}€`} />

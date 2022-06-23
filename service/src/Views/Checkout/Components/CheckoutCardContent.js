@@ -20,7 +20,7 @@ const CheckoutCardContent = (props) => {
                 </div>
             </div>
             <DashedLine />
-            <Summary total="21.98" />
+            <Summary total={props.total} />
         </div>
     )
 }
