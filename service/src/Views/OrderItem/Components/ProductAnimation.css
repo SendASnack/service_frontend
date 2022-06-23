@@ -28,6 +28,7 @@
     visibility: visible;
     bottom: -90%;
   }
+  
   to {
     bottom: -80%;
     opacity: 0;
