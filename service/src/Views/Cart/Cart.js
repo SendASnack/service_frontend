@@ -27,7 +27,7 @@ const Cart = () => {
         array.map((item) => {
             total += parseFloat(JSON.parse(item)[1]);
             console.log("category: ", JSON.parse(item)[2])
-            if (JSON.parse(item)[2] === "fries") {
+            if (JSON.parse(item)[2] === "FRIES") {
                 result.push(
                     <CartItem image="fries.png" name={JSON.parse(item)[0]} price={JSON.parse(item)[1]} desc="With Cheese and Ketchup" />
                 )
