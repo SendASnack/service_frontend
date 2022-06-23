@@ -1,12 +1,12 @@
 .orders {
-    background-color: rgb(250, 247, 247);
-    padding-top: 10rem;
+  background-color: rgb(250, 247, 247);
+  padding-top: 10rem;
 }
 
 .orders-content {
-    background-color: rgb(250, 247, 247);
-    font-family: "Poppins", sans-serif;
-    position: relative;
-    width: 100%;
-    padding: 0  5rem 5rem 5rem;
+  background-color: rgb(250, 247, 247);
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  padding: 0 5rem 5rem 5rem;
 }

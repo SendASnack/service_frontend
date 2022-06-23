@@ -1,36 +1,36 @@
 .product-animation {
-    position: absolute;
-    bottom: -80%;
-    right: 20px;
-    width: 16rem;
-    height: 10rem;
-    padding: 1rem;
-    background-color: #fff;
-    z-index: 10;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 12px;
-    animation: productAnimation 2s linear;
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: opacity 2.2s linear;
+  position: absolute;
+  bottom: -80%;
+  right: 20px;
+  width: 16rem;
+  height: 10rem;
+  padding: 1rem;
+  background-color: #fff;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  animation: productAnimation 2s linear;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 2.2s linear;
 }
 
 .product-animation::after {
-    opacity: 0;
+  opacity: 0;
 }
 
-@keyframes productAnimation{
-    from{
-        opacity: 1;
-        visibility: visible;
-      bottom: -90%;
-    }
-    to{
-      bottom: -80%;
-      opacity: 0;
-      visibility: hidden;
-    }
+@keyframes productAnimation {
+  from {
+    opacity: 1;
+    visibility: visible;
+    bottom: -90%;
   }
+  to {
+    bottom: -80%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
