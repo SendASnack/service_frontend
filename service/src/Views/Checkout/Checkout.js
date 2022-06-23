@@ -13,7 +13,7 @@ const Checkout = (props) => {
             method: 'POST',
             headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
         };
-        fetch('http://localhost:8080/api/cart/order', requestOptions)
+        fetch('http://20.77.90.223:8081/api/cart/order', requestOptions)
             .then(response => response.json())
             .then(data => {
                 console.log("data: ",data);

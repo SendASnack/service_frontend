@@ -36,7 +36,7 @@ const OrderItem = () => {
         method: 'PATCH',
         headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
       };
-      fetch('http://localhost:8080/api/cart/'+id+'/add', requestOptions)
+      fetch('http://20.77.90.223:8081/api/cart/'+id+'/add', requestOptions)
         .then(response => response.json())
         .then(data => {
           console.log(data);

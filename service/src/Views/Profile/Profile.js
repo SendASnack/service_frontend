@@ -19,7 +19,7 @@ const Profile = () => {
             method: 'GET',
             headers: { 'Authorization': 'Bearer ' + localStorage.getItem("token")},
         };
-        fetch('http://localhost:8080/api/profile', requestOptions)
+        fetch('http://20.77.90.223:8081/api/profile', requestOptions)
             .then(response => response.json())
             .then(data => {
                 let arr = [];
