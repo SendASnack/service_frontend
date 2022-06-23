@@ -26,6 +26,7 @@ const BurgerCard = (props) => {
     localStorage.setItem("product_title", props.title);
     localStorage.setItem("product_text", props.text);
     localStorage.setItem("product_price", props.price);
+    localStorage.setItem("product_category", props.category);
     setTimeout(() => window.location.replace("order-item"), 1500);
   }
 
@@ -40,7 +41,7 @@ const BurgerCard = (props) => {
       </div>
       <div className="card-buttons">
         {isLoggedIn ? (
-            <button className="button order-outline" onClick={passDataToOrder}>Order Now</button>
+            <button data-testid="order-product-button" className="button order-outline" onClick={passDataToOrder}>Order Now</button>
         ) : (
           <div className="not-logged-in-button" onClick={ModalHandler}>
             {modal && (

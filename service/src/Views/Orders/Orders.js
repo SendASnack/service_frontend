@@ -35,6 +35,7 @@ const Orders = (props) => {
                 title={product.name}
                 text={product.description}
                 price={product.price}
+                category={product.category}
               />
             );
           } else {
@@ -47,6 +48,7 @@ const Orders = (props) => {
                 title={product.name}
                 text={product.description}
                 price={product.price}
+                category={product.category}
               />
             );
           }

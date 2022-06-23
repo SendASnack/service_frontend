@@ -17,6 +17,7 @@ const OrderItem = () => {
   const [price, setPrice] = useState("");
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
+  const [category, setCategory] = useState("");
   const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
@@ -24,6 +25,7 @@ const OrderItem = () => {
       setName(localStorage.getItem("product_title"))
       setDesc(localStorage.getItem("product_text"))
       setPrice(localStorage.getItem("product_price"))
+      setCategory(localStorage.getItem("product_category"));
   }, []);
 
   const addToCart = () => {
@@ -39,6 +41,12 @@ const OrderItem = () => {
         .then(data => {
           console.log(data);
           setShowAnimation(true);
+          
+          var old_data = JSON.parse(localStorage.getItem('products'));
+          old_data.push(JSON.stringify([name, price, category]));
+
+          localStorage.setItem('products', JSON.stringify(old_data));
+
           setTimeout(() => window.location.replace("/cart"), 2500);
         })
     } else {
@@ -48,6 +56,7 @@ const OrderItem = () => {
     localStorage.removeItem("product_title");
     localStorage.removeItem("product_text");
     localStorage.removeItem("product_price");
+    localStorage.removeItem("product_category");
   }
 
   return (

@@ -32,6 +32,7 @@ const HomeContent = () => {
                 title={product.name}
                 text={product.description}
                 price={product.price}
+                category={product.category}
               />
             );
           } else {
@@ -45,6 +46,7 @@ const HomeContent = () => {
                 title={product.name}
                 text={product.description}
                 price={product.price}
+                category={product.category}
               />
             );
           }
