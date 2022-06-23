@@ -1,6 +1,6 @@
 .navbar,
 .navbar-white {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   height: 150px;
   width: 100%;
   position: fixed;

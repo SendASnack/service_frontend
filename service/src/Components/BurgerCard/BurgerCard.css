@@ -1,7 +1,7 @@
 .burger-card {
   flex: 0 0 33.3333333%;
   background-color: #fff;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   width: 18rem;
   height: 32rem;
   max-width: 18rem;
@@ -52,13 +52,11 @@
   padding: 0.7rem 2.2rem;
   border-radius: 12px;
   outline: none;
-  border: none;
   text-transform: uppercase;
   background-color: #fff;
   color: red;
   border: solid 1px red;
   margin: 2rem 0;
-  padding: 0.7rem 1.5rem;
   font-size: 16px;
 }
 

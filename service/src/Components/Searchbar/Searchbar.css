@@ -11,7 +11,7 @@
 }
 
 .search-bar-input::placeholder {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
     color: rgb(105, 105, 105);
