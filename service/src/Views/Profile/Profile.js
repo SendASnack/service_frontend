@@ -24,6 +24,7 @@ const Profile = () => {
             .then(data => {
                 let arr = [];
                 arr.push(data);
+                console.log(data)
                 arr.map((info) => {
                     result.push(<InfoData title="Name" content={info.name} />);
                     result.push(<InfoData title="Email" content={info.email} />);

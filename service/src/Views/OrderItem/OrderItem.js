@@ -9,6 +9,7 @@ import HeaderImage from "./Components/HeaderImage";
 import OrderItemDesc from "./Components/OrderItemDesc";
 import { useEffect, useState } from "react";
 import "./OrderItem.css";
+import ProductAnimation from "./Components/ProductAnimation";
 
 const OrderItem = () => {
 
@@ -16,6 +17,7 @@ const OrderItem = () => {
   const [price, setPrice] = useState("");
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
+  const [showAnimation, setShowAnimation] = useState(false);
 
   useEffect(() => {
       setId(localStorage.getItem("product_id"))
@@ -36,7 +38,8 @@ const OrderItem = () => {
         .then(response => response.json())
         .then(data => {
           console.log(data);
-          setTimeout(() => window.location.replace("/cart"), 1000);
+          setShowAnimation(true);
+          setTimeout(() => window.location.replace("/cart"), 2500);
         })
     } else {
       window.location.replace("/");
@@ -82,6 +85,7 @@ const OrderItem = () => {
         </Card>
         </div>
       </div>
+      {showAnimation && <ProductAnimation name={name} price={price} />}
     </>
   );
 };
